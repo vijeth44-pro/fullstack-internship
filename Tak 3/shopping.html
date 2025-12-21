@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+  </head>
+  <body
+    style="
+      margin: 0;
+      padding: 20px;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fcfcfc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    "
+  >
+    <div
+      class="cart-card"
+      style="
+        margin: 0;
+        padding: 50px;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        background: #fff;
+        width: 100%;0
+        max-width: 950px;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+        border: 1px solid #f0f0f0;
+      "
+    >
+      <h1
+        style="
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Poppins', sans-serif;
+          text-align: center;
+          font-weight: 600;
+          font-size: 28px;
+          margin-bottom: 50px;
+        "
+      >
+        My Shopping Cart
+      </h1>
+
+      <div
+        class="cart-table-header"
+        style="
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Poppins', sans-serif;
+          display: grid;
+          grid-template-columns: 3fr 1fr 1fr 1fr 0.5fr;
+          padding-bottom: 15px;
+          color: #b0b0b0;
+          font-size: 14px;
+          border-bottom: 1px solid #f5f5f5;
+        "
+      >
+        <span
+          style="
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+          "
+          >Product</span
+        >
+        <span
+          style="
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+          "
+          >Size</span
+        >
+        <span
+          style="
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+          "
+          >Quantity</span
+        >
+        <span
+          style="
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+          "
+          >Price</span
+        >
+        <span
+          style="
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+          "
+        ></span>
+      </div>
+
+      <div
+        class="cart-item"
+        style="
+          margin: 0;
+          padding: 25px 0;
+          box-sizing: border-box;
+          font-family: 'Poppins', sans-serif;
+          display: grid;
+          grid-template-columns: 3fr 1fr 1fr 1fr 0.5fr;
+          align-items: center;
+          border-bottom: 1px solid #f9f9f9;
+        "
+      >
+        <div
+          class="product-cell"
+          style="
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+          "
+        >
+          <img
+            src="../img/top.png"
+            alt="Top"
+            style="
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+              font-family: 'Poppins', sans-serif;
+              width: 85px;
+              height: 85px;
+              background-color: #f7f7f7;
+              border-radius: 8px;
+              object-fit: cover;
+            "
+          />
+          <div
+            class="product-details"
+            style="
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+              font-family: 'Poppins', sans-serif;
+            "
+          >
+            <div
+              class="name"
+              style="
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 500;
+                font-size: 15px;
+                color: #111;
+              "
+            >
+              Top for Women
+            </div>
+            <div
+              class="id"
+              style="
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+                font-size: 12px;
+                color: #a0a0a0;
+                margin-top: 4px;
+              "
+            >
+              Product ID: 4553458120
+            </div>
+          </div>
+        </div>
+        <div
+          class="size-cell"
+          style="
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 15px;
+          "
+        >
+          L
+        </div>
+        <div
+          class="qty-cell"
+          style="
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+          "
+        >
+          <button
+            class="qty-btn"
+            style="
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+              font-family: 'Poppins', sans-serif;
+              background: none;
+              border: none;
+              font-size: 18px;
+              color: #888;
+              cursor: pointer;
+            "
+          >
+            —
+          </button>
+          <input
+            type="text"
+            class="qty-input"
+            value="02"
+            style="
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+              font-family: 'Poppins', sans-serif;
+              width: 45px;
+              height: 38px;
+              text-align: center;
+              border: 1px solid #eee;
+              border-radius: 20px;
+              font-size: 14px;
+              background: #fff;
+            "
+          />
+          <button
+            class="qty-btn"
+            style="
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+              font-family: 'Poppins', sans-serif;
+              background: none;
+              border: none;
+              font-size: 18px;
+              color: #888;
+              cursor: pointer;
+            "
+          >
+            +
+          </button>
+        </div>
+        <div
+          class="price-cell"
+          style="
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 15px;
+          "
+        >
+          $50.00
+        </div>
+        <div
+          class="remove-btn"
+          style="
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            color: #d0d0d0;
+            font-size: 22px;
+            cursor: pointer;
+            text-align: right;
+          "
+        >
+          ×
+        </div>
+      </div>
+
+      <div
+        class="cart-item"
+        style="
+          margin: 0;
+          padding: 25px 0;
+          box-sizing: border-box;
+          font-family: 'Poppins', sans-serif;
+          display: grid;
+          grid-template-columns: 3fr 1fr 1fr 1fr 0.5fr;
+          align-items: center;
+          border-bottom: 1px solid #f9f9f9;
+        "
+      >
+        <div
+          class="product-cell"
+          style="
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+          "
+        >
+          <img
+            src="../img/blue.png"
+            alt="T-shirt"
+            style="
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+              font-family: 'Poppins', sans-serif;
+              width: 75px;
+              height: 85px;
+              background-color: #f7f7f7;
+              border-radius: 8px;
+              object-fit: cover;
+            "
+          />
+          <div
+            class="product-details"
+            style="
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+              font-family: 'Poppins', sans-serif;
+            "
+          >
+            <div
+              class="name"
+              style="
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 500;
+                font-size: 15px;
+                color: #111;
+              "
+            >
+              Blue T-shirt for Men
+            </div>
+            <div
+              class="id"
+              style="
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+                font-size: 12px;
+                color: #a0a0a0;
+                margin-top: 4px;
+              "
+            >
+              Product ID: 8953458747
+            </div>
+          </div>
+        </div>
+        <div
+          class="size-cell"
+          style="
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 15px;
+          "
+        >
+          M
+        </div>
+        <div
+          class="qty-cell"
+          style="
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+          "
+        >
+          <button
+            class="qty-btn"
+            style="
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+              font-family: 'Poppins', sans-serif;
+              background: none;
+              border: none;
+              font-size: 18px;
+              color: #888;
+              cursor: pointer;
+            "
+          >
+            —
+          </button>
+          <input
+            type="text"
+            class="qty-input"
+            value="02"
+            style="
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+              font-family: 'Poppins', sans-serif;
+              width: 45px;
+              height: 38px;
+              text-align: center;
+              border: 1px solid #eee;
+              border-radius: 20px;
+              font-size: 14px;
+              background: #fff;
+            "
+          />
+          <button
+            class="qty-btn"
+            style="
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+              font-family: 'Poppins', sans-serif;
+              background: none;
+              border: none;
+              font-size: 18px;
+              color: #888;
+              cursor: pointer;
+            "
+          >
+            +
+          </button>
+        </div>
+        <div
+          class="price-cell"
+          style="
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 15px;
+          "
+        >
+          $50.00
+        </div>
+        <div
+          class="remove-btn"
+          style="
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            color: #d0d0d0;
+            font-size: 22px;
+            cursor: pointer;
+            text-align: right;
+          "
+        >
+          ×
+        </div>
+      </div>
+
+      <div
+        class="cart-item"
+        style="
+          margin: 0;
+          padding: 25px 0;
+          box-sizing: border-box;
+          font-family: 'Poppins', sans-serif;
+          display: grid;
+          grid-template-columns: 3fr 1fr 1fr 1fr 0.5fr;
+          align-items: center;
+          border-bottom: 1px solid #f9f9f9;
+        "
+      >
+        <div
+          class="product-cell"
+          style="
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+          "
+        >
+          <img
+            src="../img/pink.png"
+            alt="Shirt"
+            style="
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+              font-family: 'Poppins', sans-serif;
+              width: 70px;
+              height: 85px;
+              background-color: #f7f7f7;
+              border-radius: 8px;
+              object-fit: cover;
+            "
+          />
+          <div
+            class="product-details"
+            style="
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+              font-family: 'Poppins', sans-serif;
+            "
+          >
+            <div
+              class="name"
+              style="
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 500;
+                font-size: 15px;
+                color: #111;
+              "
+            >
+              Pink Shirt for Men
+            </div>
+            <div
+              class="id"
+              style="
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+                font-size: 12px;
+                color: #a0a0a0;
+                margin-top: 4px;
+              "
+            >
+              Product ID: 2011458796
+            </div>
+          </div>
+        </div>
+        <div
+          class="size-cell"
+          style="
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 15px;
+          "
+        >
+          XL
+        </div>
+        <div
+          class="qty-cell"
+          style="
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+          "
+        >
+          <button
+            class="qty-btn"
+            style="
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+              font-family: 'Poppins', sans-serif;
+              background: none;
+              border: none;
+              font-size: 18px;
+              color: #888;
+              cursor: pointer;
+            "
+          >
+            —
+          </button>
+          <input
+            type="text"
+            class="qty-input"
+            value="02"
+            style="
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+              font-family: 'Poppins', sans-serif;
+              width: 45px;
+              height: 38px;
+              text-align: center;
+              border: 1px solid #eee;
+              border-radius: 20px;
+              font-size: 14px;
+              background: #fff;
+            "
+          />
+          <button
+            class="qty-btn"
+            style="
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+              font-family: 'Poppins', sans-serif;
+              background: none;
+              border: none;
+              font-size: 18px;
+              color: #888;
+              cursor: pointer;
+            "
+          >
+            +
+          </button>
+        </div>
+        <div
+          class="price-cell"
+          style="
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 15px;
+          "
+        >
+          $50.00
+        </div>
+        <div
+          class="remove-btn"
+          style="
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            color: #d0d0d0;
+            font-size: 22px;
+            cursor: pointer;
+            text-align: right;
+          "
+        >
+          ×
+        </div>
+      </div>
+
+      <div
+        class="summary-container"
+        style="
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Poppins', sans-serif;
+          display: flex;
+          justify-content: space-between;
+          margin-top: 40px;
+          gap: 20px;
+        "
+      >
+        <div
+          class="summary-box"
+          style="
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            flex: 1;
+            border-radius: 10px;
+            border: 1px solid #f0f0f0;
+          "
+        >
+          <div
+            class="summary-row"
+            style="
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+              font-family: 'Poppins', sans-serif;
+              display: flex;
+              justify-content: space-between;
+              margin-bottom: 12px;
+              font-size: 15px;
+              color: #444;
+            "
+          >
+            <span
+              style="
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+              "
+              >Discount</span
+            ><span
+              style="
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+              "
+              >$0.00</span
+            >
+          </div>
+          <div
+            class="summary-row"
+            style="
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+              font-family: 'Poppins', sans-serif;
+              display: flex;
+              justify-content: space-between;
+              margin-bottom: 12px;
+              font-size: 15px;
+              color: #444;
+            "
+          >
+            <span
+              style="
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+              "
+              >Delivery</span
+            ><span
+              style="
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+              "
+              >$20.00</span
+            >
+          </div>
+        </div>
+        <div
+          class="summary-box"
+          style="
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            flex: 1;
+            border-radius: 10px;
+            border: 1px solid #f0f0f0;
+          "
+        >
+          <div
+            class="summary-row"
+            style="
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+              font-family: 'Poppins', sans-serif;
+              display: flex;
+              justify-content: space-between;
+              margin-bottom: 12px;
+              font-size: 15px;
+              color: #444;
+            "
+          >
+            <span
+              style="
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+              "
+              >Subtotal</span
+            ><span
+              style="
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+              "
+              >$260.00</span
+            >
+          </div>
+          <div
+            class="summary-row total"
+            style="
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+              font-family: 'Poppins', sans-serif;
+              display: flex;
+              justify-content: space-between;
+              margin-bottom: 12px;
+              font-size: 15px;
+              color: #000;
+              margin-top: 15px;
+              padding-top: 15px;
+              border-top: 1px solid #f5f5f5;
+              font-weight: 600;
+            "
+          >
+            <span
+              style="
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+              "
+              >Total</span
+            ><span
+              style="
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+              "
+              >$280.00</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <p
+        class="promo-text"
+        style="
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Poppins', sans-serif;
+          font-size: 12px;
+          color: #bbb;
+          margin-top: 25px;
+          margin-bottom: 8px;
+        "
+      >
+        If you have a promotion code, please enter it here.
+      </p>
+      <div
+        class="promo-wrapper"
+        style="
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Poppins', sans-serif;
+          display: flex;
+          border: 1px solid #e0e0e0;
+          border-radius: 6px;
+          overflow: hidden;
+          max-width: 100%;
+        "
+      >
+        <input
+          type="text"
+          placeholder="Please enter promo code"
+          style="
+            margin: 0;
+            padding: 14px 18px;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            flex: 1;
+            border: none;
+            outline: none;
+            font-size: 14px;
+          "
+        />
+        <button
+          style="
+            margin: 0;
+            padding: 0 30px;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            background-color: #ff4d00;
+            color: white;
+            border: none;
+            font-weight: 500;
+            cursor: pointer;
+          "
+        >
+          Apply Discount
+        </button>
+      </div>
+
+      <div
+        class="action-btns"
+        style="
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Poppins', sans-serif;
+          display: flex;
+          justify-content: space-between;
+          margin-top: 35px;
+          gap: 20px;
+        "
+      >
+        <button
+          class="btn btn-back"
+          style="
+            margin: 0;
+            padding: 16px;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            flex: 1;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 15px;
+            cursor: pointer;
+            border: none;
+            text-align: center;
+            background-color: #000000;
+            color: #ffffff;
+          "
+        >
+          Back to Shop
+        </button>
+        <button
+          class="btn btn-checkout"
+          style="
+            margin: 0;
+            padding: 16px;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            flex: 1;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 15px;
+            cursor: pointer;
+            border: none;
+            text-align: center;
+            background-color: #ff4000;
+            color: #fff;
+          "
+        >
+          Checkout
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
