@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="registration.php" method="post" enctype="multipart/form-data">
+      <label>Enter your name</label>
+      <input
+        type="text"
+        name="uname"
+        value=""
+        placeholder="ex:John"
+        required
+      /><br />
+      <label>Enter your Email</label>
+      <input type="email" name="uemail" required />
+      <br />
+      <label>Enetr your Password</label>
+      <input type="password" name="upassword" required />
+      <br />
+      <label>Enetr your phone</label>
+      <input type="tel" name="uphonenumber" required />
+      <br />
+      <label>Enter your age</label>
+      <input type="number" name="uage" required />
+      <br />
+      <label>Enter DOB</label>
+      <input type="date" name="udob" required />
+      <br />
+      <label>Enter Time</label>
+      <input type="time" name="utime" required />
+      <br />
+      <label>Enetr Gender</label>
+      <input type="radio" name="ugender" value="male" required />Male
+      <input type="radio" name="ugender" value="female" required />Female
+      <br />
+      <label>Qualification</label>
+      <input type="checkbox" name="uqual" value="10th" />10th
+      <input type="checkbox" name="uqual" value="11th" />11th
+      <input type="checkbox" name="uqual" value="12th" />12th
+      <input type="checkbox" name="uqual" value="Graduation" />Graduation
+      <br />
+      <label>Select Role</label>
+      <select name="urole">
+        <option value="" selected disabled>select role</option>
+        <option value="Software Developer">Software Developer</option>
+        <option value="Manager">Manager</option>
+        <option value="HR">HR</option>
+        <option value="admin">admin</option>
+      </select>
+      <br />
+      <label>Upload pfp</label>
+      <input type="file" name="uprofile" required />
+      <br />
+      <input type="submit" name="usubmit" value="Register" />
+      <input type="reset" name="ureset" value="Reset Form" />
+    </form>
+  </body>
+</html>
