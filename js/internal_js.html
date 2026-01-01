@@ -42,14 +42,106 @@
         console.log(typeof e)
 
         //array
-        const arr=[1,2,3,4,5,'hello',true]
+        //can create array inside array
+        const arr=[4,4.5,'hello',true ,[1,5,false]]
         console.log(arr)
         console.log(typeof arr)
         console.log(arr.length)
 
+        // //index
+        console.log(arr[0])
+        console.log(arr[1])
+        console.log(arr[2])
+
+        // //false
+        console.log(arr[4][2])
 
 
+        //object
+        //{} used and each element should be stored in key:value pair
+        //seperate by comma
+        const obj={
+            name:"test",
+            age:67,
+            email:["test@gmail.com","test1@gmail.com"],
+            address:{
+                city:"mangalore",
+                code:574202
+            }
+        }
+
+        console.log(obj)
+        console.log(typeof obj)
+
+        //accessing object elements
+        console.log(obj.name)
+        console.log(obj["age"])
+
+        //test@gmail.com
+        console.log(obj.email[0])
+
+         //574202
+        console.log(obj?.address?.code)
+
+        //equality operators
+        let x=10
+        let y='10'
+        console.log(x==y)
+
+
+
+        //strict equality operator
+        console.log(x===y)
+
+        //conditional statements
+        let m=10
+        let n=20
+        if (m>n){
+            console.log("m is greater than n")
+        }
+        else if(n>m){
+            console.log("n is greater than m")
+
+        }
+        else{
+            console.log("m and n are equal")
+        }
+
+//task 1:
+//write a code to find largest of 3 numbers using logical operators
+
+
+
+
+
+
+
+
+
+//switch statement in js
+let v=2
+switch(v){
+    case 1:console.log("its monday")
+    break;
+    case 2:console.log("its tuesday")
+    break;
+    case 3:console.log("its wednesday")
+    break;
+
+    default:console.log("wrong input")
     
+
+}
+
+
+//task 2
+//create a switch statement, for display musics/songs of different genres
+//v=sad
+//genres sad,happy,joy,....
+
+
+
+
      </script>
      <script src="external.js"></script>
 </body>
