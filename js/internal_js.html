@@ -1,158 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Welcome</h1>
     <!-- 2 ways to keep js -->
-     <!-- internal -->
+    <!-- internal -->
 
-     <script>
-        //console function
-        console.log('hello world');
-        
-        //alert function
-        alert('hello world');
+    <script>
+      //console function
+      console.log("hello world");
 
-        //confirm function
-        confirm('are you sure?');
+      //alert function
+      alert("hello world");
 
-        //variables in js
-        //declaring the variable
-        //var->old js ,functionally scoped,const ->new ecma standard, constant no changing,let->new ecma standard, can change values after declaring
+      //confirm function
+      confirm("are you sure?");
 
-        const a=10
-        let b=9.56
-        var c='hello'
-        console.log(a,b,c,"variables in js");
-        console.log(typeof a)
-        console.log(typeof b)
-        console.log(typeof c)
-        console.log(c.length)
+      //variables in js
+      //declaring the variable
+      //var->old js ,functionally scoped,const ->new ecma standard, constant no changing,let->new ecma standard, can change values after declaring
 
-        //data types in js
-        //number, string, boolean, array, object
-        let d=true
-        let e=false
-        console.log(d,e)
-        console.log(typeof d)
-        console.log(typeof e)
+      const a = 10;
+      let b = 9.56;
+      var c = "hello";
+      console.log(a, b, c, "variables in js");
+      console.log(typeof a);
+      console.log(typeof b);
+      console.log(typeof c);
+      console.log(c.length);
 
-        //array
-        //can create array inside array
-        const arr=[4,4.5,'hello',true ,[1,5,false]]
-        console.log(arr)
-        console.log(typeof arr)
-        console.log(arr.length)
+      //data types in js
+      //number, string, boolean, array, object
+      let d = true;
+      let e = false;
+      console.log(d, e);
+      console.log(typeof d);
+      console.log(typeof e);
 
-        // //index
-        console.log(arr[0])
-        console.log(arr[1])
-        console.log(arr[2])
+      //array
+      //can create array inside array
+      const arr = [4, 4.5, "hello", true, [1, 5, false]];
+      console.log(arr);
+      console.log(typeof arr);
+      console.log(arr.length);
 
-        // //false
-        console.log(arr[4][2])
+      // //index
+      console.log(arr[0]);
+      console.log(arr[1]);
+      console.log(arr[2]);
 
+      // //false
+      console.log(arr[4][2]);
 
-        //object
-        //{} used and each element should be stored in key:value pair
-        //seperate by comma
-        const obj={
-            name:"test",
-            age:67,
-            email:["test@gmail.com","test1@gmail.com"],
-            address:{
-                city:"mangalore",
-                code:574202
-            }
-        }
+      //object
+      //{} used and each element should be stored in key:value pair
+      //seperate by comma
+      const obj = {
+        name: "test",
+        age: 67,
+        email: ["test@gmail.com", "test1@gmail.com"],
+        address: {
+          city: "mangalore",
+          code: 574202,
+        },
+      };
 
-        console.log(obj)
-        console.log(typeof obj)
+      console.log(obj);
+      console.log(typeof obj);
 
-        //accessing object elements
-        console.log(obj.name)
-        console.log(obj.age) //or obj['age']
+      //accessing object elements
+      console.log(obj.name);
+      console.log(obj.age); //or obj['age']
 
-        //test@gmail.com
-        console.log(obj.email[0])
+      //test@gmail.com
+      console.log(obj.email[0]);
 
-         //574202
-        console.log(obj?.address?.code)
+      //574202
+      console.log(obj?.address?.code);
 
-        //equality operators
-        let x=10
-        let y='10'
-        console.log(x==y)
+      //equality operators
+      let x = 10;
+      let y = "10";
+      console.log(x == y);
 
+      //strict equality operator
+      console.log(x === y);
 
+      //conditional statements
+      let m = 10;
+      let n = 20;
+      if (m > n) {
+        console.log("m is greater than n");
+      } else if (n > m) {
+        console.log("n is greater than m");
+      } else {
+        console.log("m and n are equal");
+      }
 
-        //strict equality operator
-        console.log(x===y)
+      //task 1:
+      //write a code to find largest of 3 numbers using logical operators
 
-        //conditional statements
-        let m=10
-        let n=20
-        if (m>n){
-            console.log("m is greater than n")
-        }
-        else if(n>m){
-            console.log("n is greater than m")
+      //switch statement in js
+      let v = 2;
+      switch (v) {
+        case 1:
+          console.log("its monday");
+          break;
+        case 2:
+          console.log("its tuesday");
+          break;
+        case 3:
+          console.log("its wednesday");
+          break;
 
-        }
-        else{
-            console.log("m and n are equal")
-        }
+        default:
+          console.log("wrong input");
+      }
 
-//task 1:
-//write a code to find largest of 3 numbers using logical operators
-
-
-
-
-
-
-
-
-
-//switch statement in js
-let v=2
-switch(v){
-    case 1:console.log("its monday")
-    break;
-    case 2:console.log("its tuesday")
-    break;
-    case 3:console.log("its wednesday")
-    break;
-
-    default:console.log("wrong input")
-    
-
-}
-
-
-//task 2
-//create a switch statement, for display musics/songs of different genres
-//v=sad
-//genres sad,happy,joy,....
-let g = "sad"
-switch(g){
-    case "happy by pharrell williams":console.log("Happy,Stayin Alive,Three little birds,Walking on sunshine,I'm yours")
-    break;
-    case "sad":console.log("Someone you loved,When the party's over,Fix you,Let her go,Stay with me")
-    break;
-    case "angry":console.log("Break stuff,Killing in the name,Duality,Bulls on parade,Down with the sickness")
-    break;
-    default:console.log("wrong input")
-}
-
-
-
-
-     </script>
-     <script src="external.js"></script>
-</body>
+      //task 2
+      //create a switch statement, for display musics/songs of different genres
+      //v=sad
+      //genres sad,happy,joy,....
+      let g = "sad";
+      switch (g) {
+        case "happy by pharrell williams":
+          console.log(
+            "Happy,Stayin Alive,Three little birds,Walking on sunshine,I'm yours"
+          );
+          break;
+        case "sad":
+          console.log(
+            "Someone you loved,When the party's over,Fix you,Let her go,Stay with me"
+          );
+          break;
+        case "angry":
+          console.log(
+            "Break stuff,Killing in the name,Duality,Bulls on parade,Down with the sickness"
+          );
+          break;
+        default:
+          console.log("wrong input");
+      }
+    </script>
+    <script src="external.js"></script>
+  </body>
 </html>
