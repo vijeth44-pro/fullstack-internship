@@ -11,14 +11,23 @@
     <h4 class="data">Dom Manipulation</h4>
     <h6 id="1">Welcome</h6>
     <input type="text" name="uname" id="utext" value="test-user">
-
+<br>
     <!-- create a 2 input box with default no values -->
      <!-- keep container -->
         <!-- use dom manipulation to get the two input values and find sum,display inside the div -->
 
-
-
-
+        <input type="number" id="num1" value="0">
+        <input type="number" id="num2" value="0">
+        <div id="result"></div>
+        <button onclick="calculateSum()">Find Sum</button>
+        <script>
+            function calculateSum(){
+                let n1=document.getElementById("num1").value;
+                let n2=document.getElementById("num2").value;
+                let sum=Number(n1)+Number(n2);
+                document.getElementById("result").innerHTML="Sum is: "+sum;
+            }
+        </script>
 
 
     <!-- dom ->docment object model -->
