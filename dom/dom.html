@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dom Manipulation</h1>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam labore adipisci delectus, quaerat repellendus est corrupti aliquam culpa, ullam, omnis rem! Doloremque quos earum impedit accusantium exercitationem, magni tempora fuga?</p>
+    <h4 class="data">Dom Manipulation</h4>
+    <h6 id="1">Welcome</h6>
+    <input type="text" name="uname" id="utext" value="test-user">
+
+    <!-- create a 2 input box with default no values -->
+     <!-- keep container -->
+        <!-- use dom manipulation to get the two input values and find sum,display inside the div -->
+        <input type="text" name="nm1" id="name1" value="">
+
+
+
+
+
+
+    <!-- dom ->docment object model -->
+     <!-- it is tree like structure gets created for each element -->
+      <!-- when pagee gets load -->
+       <!-- changine the dom structure  can br done using js -->
+        <!-- dom manipulation -->
+
+
+        <!-- accessing the dom values using js -->
+         <!-- BYid() -->
+          <!-- ByTagName() -->
+           <!-- classname() -->
+
+    <script>
+
+        let h1=document.getElementsByTagName("h1")
+        console.log(h1[0].innerHTML)
+
+        let p=document.getElementById("para").innerHTML;
+        console.log(p);
+
+        let h4=document.getElementsByClassName("data")
+        console.log(h4[0].innerHTML);
+
+        //changing thr style of h6
+        document.getElementById("1").style.color="red";
+        document.getElementById("1").style.border="2px solid blue";
+        document.getElementById("1").style.backgroundColor="yellow";
+        document.getElementById("1").innerHTML="Hello World";
+        let uname=document.getElementById("utext").value
+        console.log(uname)
+
+
+
+
+
+    </script>
+
+</body>
+</html>
