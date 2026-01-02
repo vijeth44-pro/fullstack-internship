@@ -216,13 +216,11 @@
 
 
       //1.defining the function
-      //create a function to find 2 no's
-
+      //create a function to find sum of 2 no's
+      //old function
       function add_no(a,b){
         return a+b;
       }
-
-
 
       //2.calling the function
       let sum=add_no(10,20);
@@ -247,9 +245,20 @@
 
 
       //arrow function
-      
-      let sum2=add_no=(a,b)=>{
-          return a+b;
+      //new ways of writing function
+      //syntax for arrow function
+
+      const add_no_arrow=(a,b)=>{
+        return a+b;
+      }
+
+      //odd or oven
+      const odd_or_even_arrow=(a)=>{
+        if(a%2==0){
+          return "even"
+        }else{
+          return "odd"
+        }
       }
 
       //task 3
