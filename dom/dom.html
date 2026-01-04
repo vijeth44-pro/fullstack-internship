@@ -5,67 +5,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body onload="alert('Pag loaded succesfully')">
+<body onload="alert('page loaded successfully')">
+
+  <!-- onload must be kept in body for page load -->
     <h1>Dom Manipulation</h1>
-    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam labore adipisci delectus, quaerat repellendus est corrupti aliquam culpa, ullam, omnis rem! Doloremque quos earum impedit accusantium exercitationem, magni tempora fuga?</p>
-    <h4 class="data">Dom Manipulation</h4>
-    <h6 id="1">Welcome</h6>
-    <input type="text" name="uname" id="utext" value="test-user">
-<br>
-    <!-- create a 2 input box with default no values -->
-     <!-- keep container -->
-        <!-- use dom manipulation to get the two input values and find sum,display inside the div -->
+    <h1>welcome to dom</h1>
+    <!-- accessing css ,js, -->
+    <p id="para"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     Dignissimos repellat iure repellendus eius deleniti in velit aut rerum natus,
+     inventore magnam eveniet id! Excepturi dolorum modi quisquam dolore necessitatibus deleniti?</p>
+     <h4 class="data">welcome</h4>
+     <h6 id="1">welcome</h6>
+     <input type="text" name="uname" id="utext" value="Test-user">
+     <!-- dom---- document object model -->
+      <!-- it is tree like structure gets crated for each element when page gets loads -->
 
-        <input type="number" id="num1" value="0">
-        <input type="number" id="num2" value="0">
-        <div id="result"></div>
-        <button onclick="calculateSum()">Find Sum</button>
-        <script>
-            function calculateSum(){
-                let n1=document.getElementById("num1").value;
-                let n2=document.getElementById("num2").value;
-                let sum=Number(n1)+Number(n2);
-                document.getElementById("result").innerHTML="Sum is: "+sum;
+    <!-- changing the dom structure can be done  using js -->
+    <!-- dom manipulation -->
+     <!-- accessing html values by dom in js -->
+
+    <!-- accessing dom values -->
+    <!-- 1.document .getElementById() -->
+    <!-- 1.document .getElementByTagName() -->
+    <!-- 1.document .getElementByclassName() -->
+    <!-- innerhtml for property accessing -->
+
+    <!-- events handling in js -->
+     <!-- when user interact with java script -->
+     <!-- running the  js code when user does any actions on web page -->
+      <!-- onclick (when user clicks any html element) -->
+       <!-- onload(when page loads for first time) -->
+        <!-- onsumit(when form submitted) -->
+         <!-- onchange(when the values of input box has been changed) -->
+   <br><br>
+      <h1>Sum of 2 no using js dom manupulation</h1>
+       <input type="number" id="num1" value="5">
+        <input type="number" id="num2" value="10">
+        <div style="width:100px;height:70px;border:1px solid red;" id="result"></div>
+
+         <button onclick="alert('you have clicked')">click here</button>
+         <!-- built in -->
+         <!-- <button onclick="confirm('are you sure')">click here</button> -->
+          <button onclick="getData()">Display</button>
+          <!-- user definted -->
+
+          <h4 onmouseover="mouseData()" id="js-1">Java script</h4>
+          
+          <!-- submit -->
+           <form action="" onsubmit="alert('you have submitted')">
+            <label >Product</label>
+            <input type="text" placeholder="Enter the product name">
+            <label >Price</label>
+            <input type="number" placeholder="Enter the price of product" value="0" id="price">
+            <label>Qty</label>
+            <input type="number" placeholder="Enter the qty for order" value="0"  onchange="calculateTotal()" id="qty">
+            <label>Total Price</label>
+            <input type="number" placeholder="Enter the price of product" value="0"  id="total">
+
+            <input type="submit" value="submit the data">
+           </form>
+          <script>
+            // submit
+            function calculateTotal(){
+              let price=document.getElementById("price").value
+              let qty=document.getElementById("qty").value
+              let total=Number(price)*Number(qty)
+              // alert(total)
+              document.getElementById("total").value=total
             }
-        </script>
+            // mouse hover
+         function mouseData(){
+           document.getElementById("js-1").innerHTML="React js"
+           document.getElementById("js-1").style.color="red"
+         }
 
 
-    <!-- dom ->docment object model -->
-     <!-- it is tree like structure gets created for each element -->
-      <!-- when pagee gets load -->
-       <!-- changine the dom structure  can br done using js -->
-        <!-- dom manipulation -->
+          let h1=document.getElementsByTagName("h1")
+          console.log(h1[0].innerHTML)
+          console.log(h1[1].innerHTML)
+          
+        //   directly can access without index
+          let p=document.getElementById("para").innerHTML
+          console.log(p)
+        // by index  
+          let h4=document.getElementsByClassName("data")
+           console.log(h4[0].innerHTML)
 
-
-        <!-- accessing the dom values using js -->
-         <!-- BYid() -->
-          <!-- ByTagName() -->
-           <!-- classname() -->
-
-    <script>
-
-        let h1=document.getElementsByTagName("h1")
-        console.log(h1[0].innerHTML)
-
-        let p=document.getElementById("para").innerHTML;
-        console.log(p);
-
-        let h4=document.getElementsByClassName("data")
-        console.log(h4[0].innerHTML);
-
-        //changing thr style of h6
-        document.getElementById("1").style.color="red";
-        document.getElementById("1").style.border="2px solid blue";
-        document.getElementById("1").style.backgroundColor="yellow";
-        document.getElementById("1").innerHTML="Hello World";
+        
+        // 3 style   
+        // changing the style of h6
+        document.getElementById("1").style.color="red"
+        document.getElementById("1").style.border="2px solid black"
+         document.getElementById("1").style.backgroundColor="yellow"
+        //  between value changed by innerhtml
+          document.getElementById("1").innerHTML="Java Script"
+        // input field
         let uname=document.getElementById("utext").value
         console.log(uname)
 
+         
+        //  create a 2 input box with deafault value no values
+            // keep conatiner div 
+          // use dom manupulation to get the two input values & find the sum ,then display inside the div 
+        let num1=document.getElementById("num1").value
+         let num2=document.getElementById("num2").value
+         console.log(num1)
+         console.log(typeof num1)
+         console.log(Number(num1)+Number(num2))
+        //  for convert string into number debug type costing
+        let sum=Number(num1)+Number(num2)
+        document.getElementById("result").innerHTML="sum of 2 number:"+sum
+        // concatination
 
+        function getData(){
+          let num1=document.getElementById("num1").value
+         let num2=document.getElementById("num2").value
+        //  for convert string into number debug type costing
+        let sum=Number(num1)+Number(num2)
+        alert("sum of 2 no is"+sum)
+        }
+          </script>
 
+          <!-- create a 2 input box with deafault value no values -->
+           <!-- keep conatiner div -->
+            <!-- use dom manupulation to get the two input values & find the sum ,then display inside the div -->
+   
+          
 
-
-    </script>
 
 </body>
 </html>
