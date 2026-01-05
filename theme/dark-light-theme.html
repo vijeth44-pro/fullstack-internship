@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="b1">
+     <button onclick="changeBG()" id="btn">Dark Mode</button>
+    <script>
+     function changeBG(){
+
+        let status=document.getElementById("btn").innerHTML
+        if(status=='Dark Mode'){
+           document.getElementById("b1").style.backgroundColor="black"
+          document.getElementById("btn").innerHTML="Light Mode"   
+        }
+        else{
+         document.getElementById("b1").style.backgroundColor="white"
+         document.getElementById("btn").innerHTML="Dark Mode"  
+         
+         }
+        }
+    </script>
+</body>
+</html>
