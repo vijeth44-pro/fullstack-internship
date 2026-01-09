@@ -14,11 +14,11 @@ export default function arrow() {
         alert("Button clicked" +" " + place)
     }
 
-
+    
   return (
     <div>
         <div>Arrow</div>
-        <button onClick={() => Click("India")}>Click me</button>
+        <button onClick={() => alert("India")}>Click me</button>
     </div>
   )
 }

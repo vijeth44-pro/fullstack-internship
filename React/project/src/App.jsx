@@ -6,6 +6,7 @@ import Variables from './es/variables.jsx' //any name can be given but path shou
 // ./to exit from file
 // ../ to go back to previous folder
 import Arrow from './es/arrow.jsx'
+import Destructuring from './es/destructuring.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,6 +15,7 @@ function App() {
     <div>
       <Variables />
       <Arrow />
+      <Destructuring />
     </div>
   )
 }
