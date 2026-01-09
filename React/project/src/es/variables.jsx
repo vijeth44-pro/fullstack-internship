@@ -12,7 +12,9 @@ export default function variables() {
     //c=20 not allowed
 
   return (
-    <div>variables</div>
-    
+    <div>
+        {a}
+    </div>
+
   )
 }
