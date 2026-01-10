@@ -1,12 +1,13 @@
 import React from "react";
-import Berserk from "../assets/berserk.jpg";
 
-export default function () {
+
+export default function Card({title,category,image}) {
     const newStyle= {backgroundColor: "blue",
           width: "300px",
-          height: "300px",
+          height: "500px",
           color: "black",
-          border:"2px solid red"}
+          borderRadius: "10px"
+        }
   return (
     <div>
       {/* first bracket for jsx and second for style object */}
@@ -15,9 +16,9 @@ export default function () {
           newStyle
         }
       >
-        <img src={Berserk} alt="berserk" style={{width:'300px' , height:'300px' }}/>
-        <h1>Title</h1>
-        <h6>Category</h6>
+        <img src={image} alt="berserk" style={{width:'300px' , height:'300px', borderRadius:'10px'}}/>
+        <h1>{title}</h1>
+        <h6>{category}</h6>
       </div>
     </div>
   );
