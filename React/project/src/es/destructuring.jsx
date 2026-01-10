@@ -2,17 +2,19 @@ import React from 'react'
 
 export default function destructuring() {
 
-    //const onj = {key: value}
+    //const obj = {key: value}
     const User = {
         name: "John",
         age: 30,
         city: "New York"
     }
+    
+    const{name,age,city} = User
   return (
     <div>
-        <p>{User.name}</p>
-        <p>{User.age}</p>
-        <p>{User.city}</p>
+        <p>{name}</p>
+        <p>{age}</p>
+        <p>{city}</p>
     </div>
     
   )
