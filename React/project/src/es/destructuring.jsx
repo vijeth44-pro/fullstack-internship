@@ -8,8 +8,9 @@ export default function destructuring() {
         age: 30,
         city: "New York"
     }
-    
+    //destructuring
     const{name,age,city} = User
+
   return (
     <div>
         <p>{name}</p>

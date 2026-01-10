@@ -7,6 +7,8 @@ import Variables from './es/variables.jsx' //any name can be given but path shou
 // ../ to go back to previous folder
 import Arrow from './es/arrow.jsx'
 import Destructuring from './es/destructuring.jsx'
+import Spread from './es/spread.jsx'
+import Card from './components/card.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,6 +18,8 @@ function App() {
       <Variables />
       <Arrow />
       <Destructuring />
+      <Spread />
+      <Card />
     </div>
   )
 }
