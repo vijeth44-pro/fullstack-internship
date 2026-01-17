@@ -5,6 +5,7 @@ export default function form() {
         name:'',
         place:''
     });
+    
   return (
     <div>
         <input type="text" placeholder='Enter your name'/>
