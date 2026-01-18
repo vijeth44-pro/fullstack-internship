@@ -1,6 +1,9 @@
 import React from 'react'
 import { useState } from 'react'  
 
+//rafce
+//form
+//input form with name and place and submit button
 export default function form() {
     const [userData,setUserData] = useState({
         name:'',
