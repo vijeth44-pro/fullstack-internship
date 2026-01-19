@@ -1,5 +1,6 @@
 import React from 'react'
 
+//destructuring
 export default function destructuring() {
 
     //const obj = {key: value}

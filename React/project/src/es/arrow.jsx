@@ -1,5 +1,6 @@
 import React from 'react'
 
+//arrow function
 export default function arrow() {
 
 

@@ -1,5 +1,6 @@
 import React from 'react'
 
+//spread operator
 export default function spread() {
     
     //spread operator is used to expand or spread iterables into single elements
