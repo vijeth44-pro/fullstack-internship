@@ -12,6 +12,7 @@ export default function Login() {
 
   return (
     <div className="container">
+      <h2><u>Welcome To Job Seeker</u></h2>
       <h2>Login</h2>
 
       <select onChange={(e) => setRole(e.target.value)}>
