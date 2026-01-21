@@ -1,11 +1,11 @@
 body {
   font-family: Arial;
-  background: #f4f6f9;
+  background: #84a4d4;
   margin: 0;
 }
 
 .container {
-  width: 350px;
+  width: 450px;
   margin: 80px auto;
   background: white;
   padding: 20px;
@@ -14,7 +14,7 @@ body {
 }
 
 input, select {
-  width: 100%;
+  width: 90%;
   padding: 10px;
   margin: 10px 0;
 }
