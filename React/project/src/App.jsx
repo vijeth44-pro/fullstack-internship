@@ -12,13 +12,15 @@ import Card from './components/card.jsx'
 import Map from './es/map.jsx'
 import  Hooks from './components/hooks.jsx'
 import Form from './pages/form.jsx'
+import TaskCard from './pages/taskcard.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div>
-      <Form />
+      {/* <Form /> */}
+      <TaskCard />
     </div>
   )
 }
