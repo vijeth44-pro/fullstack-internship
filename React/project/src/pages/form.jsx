@@ -31,9 +31,10 @@ export default function form() {
       <input
         type="text"
         placeholder="Enter your place"
-        onChange={(e) => setUserData({ ...userData, place: e.target.value })}
+        onChange={(e) => setUserData({ ...userData, place: e.target.value })} //to extend the object
         value={userData.place}
       />
+      {/* important input values are onchange and value */}
       <br />
       <button onClick={handleSubmit}>Submit</button>
       <div>
@@ -43,14 +44,13 @@ export default function form() {
             <th>Name</th>
             <th>Place</th>
           </tr>
-          {allData.map(()=> (
-            
-          ))}
-          <tr>
-            <td>1</td>
-            <td>John</td>
-            <td>London</td>
+          {allData.map((item, index)=> (
+            <tr>
+            <td>{index+1}</td>
+            <td>{item.name}</td>
+            <td>{item.place}</td>
           </tr>
+          ))}
         </table>
       </div>
     </div>
