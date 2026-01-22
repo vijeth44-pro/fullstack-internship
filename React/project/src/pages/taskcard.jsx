@@ -23,21 +23,36 @@ export default function taskcard() {
     <div>
       <input
         type="text"
-        placeholder="Enter your name"
+        placeholder="Enter Product Name"
         onChange={(e) => setUserData({ ...userData, name: e.target.value })}
         value={userData.name}
       />
       <br />
       <input
         type="text"
-        placeholder="Enter your place"
+        placeholder="Enter Price"
         onChange={(e) => setUserData({ ...userData, place: e.target.value })} //to extend the object
         value={userData.place}
       />
+      <br />
+      <input
+        type="text"
+        placeholder="Enter Category"
+        onChange={(e) => setUserData({ ...userData, name: e.target.value })}
+        value={userData.name}
+      />
+      <br />
+       <input
+        type="text"
+        placeholder="Enter Description"
+        onChange={(e) => setUserData({ ...userData, name: e.target.value })}
+        value={userData.name}
+      />
+      <br />
       {/* important input values are onchange and value */}
       <br />
       <button onClick={handleSubmit}>Submit</button>
-      <div>
+      {/* <div>
         <table border={{}}>
           <tr>
             <th>SL NO</th>
@@ -52,6 +67,9 @@ export default function taskcard() {
           </tr>
           ))}
         </table>
+      </div> */}
+      <div>
+
       </div>
     </div>
   );
