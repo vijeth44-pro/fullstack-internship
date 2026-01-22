@@ -87,7 +87,7 @@ export default function taskcard() {
               boxShadow: "2px 2px 8px #ddd"
             }}
           >
-            <h4>{item.product}</h4>
+            <h4>{item.name}</h4>
             <p><b>Price:</b> ₹{item.price}</p>
             <p><b>Category:</b> {item.category}</p>
             <p>{item.description}</p>
