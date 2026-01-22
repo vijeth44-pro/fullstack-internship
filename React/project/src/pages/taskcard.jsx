@@ -75,7 +75,25 @@ export default function taskcard() {
 
       {/* Implementing card here */}
       <div>
-
+          <div style={{ display: "flex", gap: "15px", flexWrap: "wrap" }}>
+        {allData.map((item, index) => (
+          <div
+            key={index}
+            style={{
+              border: "1px solid #ac5555",
+              padding: "15px",
+              width: "200px",
+              borderRadius: "8px",
+              boxShadow: "2px 2px 8px #ddd"
+            }}
+          >
+            <h4>{item.product}</h4>
+            <p><b>Price:</b> ₹{item.price}</p>
+            <p><b>Category:</b> {item.category}</p>
+            <p>{item.description}</p>
+          </div>
+        ))}
+      </div>
       </div>
     </div>
   );
