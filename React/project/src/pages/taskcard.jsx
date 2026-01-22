@@ -7,7 +7,9 @@ import { useState } from "react";
 export default function taskcard() {
   const [userData, setUserData] = useState({
     name: "", //object
-    place: ""
+    price: "",
+    category: "",
+    description: ""
   });
   
   const [allData,setAllData] = useState([])
@@ -15,7 +17,7 @@ export default function taskcard() {
   const handleSubmit = () => {
     console.log("User Data:", userData);
     setAllData([...allData, userData])
-    setUserData({name:"",place:""})
+    setUserData({name:"",price:"",category:"",description:""})
     alert("Form submitted successfully!")
   };
 
@@ -31,27 +33,28 @@ export default function taskcard() {
       <input
         type="text"
         placeholder="Enter Price"
-        onChange={(e) => setUserData({ ...userData, place: e.target.value })} //to extend the object
-        value={userData.place}
+        onChange={(e) => setUserData({ ...userData, price: e.target.value })} //to extend the object
+        value={userData.price}
       />
       <br />
       <input
         type="text"
         placeholder="Enter Category"
-        onChange={(e) => setUserData({ ...userData, name: e.target.value })}
-        value={userData.name}
+        onChange={(e) => setUserData({ ...userData, category: e.target.value })}
+        value={userData.category}
       />
       <br />
        <input
         type="text"
         placeholder="Enter Description"
-        onChange={(e) => setUserData({ ...userData, name: e.target.value })}
-        value={userData.name}
+        onChange={(e) => setUserData({ ...userData, description: e.target.value })}
+        value={userData.description}
       />
       <br />
       {/* important input values are onchange and value */}
       <br />
       <button onClick={handleSubmit}>Submit</button>
+      <hr />
       {/* <div>
         <table border={{}}>
           <tr>
@@ -68,6 +71,9 @@ export default function taskcard() {
           ))}
         </table>
       </div> */}
+
+
+      {/* Implementing card here */}
       <div>
 
       </div>
