@@ -13,11 +13,11 @@ export default function Home() {
         alt=""
         style={{ width: "100%", height: "700px", marginTop: "20px" }}
       />
-      <Box >
+      <Box>
         <Typography>Categories</Typography>
-         <Category />
-         <MuiForm />
+        <Category />
       </Box>
+      <MuiForm />
     </div>
   );
 }
