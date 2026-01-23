@@ -54,7 +54,7 @@ export default function taskcard() {
       {/* important input values are onchange and value */}
       <br />
       <button onClick={handleSubmit}>Submit</button>
-      <hr />
+    
       {/* <div>
         <table border={{}}>
           <tr>
@@ -80,7 +80,7 @@ export default function taskcard() {
           <div
             key={index}
             style={{
-              border: "1px solid #ac5555",
+              border: "1px solid #ffffff",
               padding: "15px",
               width: "200px",
               borderRadius: "8px",
