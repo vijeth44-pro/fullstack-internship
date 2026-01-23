@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Category from "../components/Category";
 import { Box , Typography } from "@mui/material";
+import MuiForm from "../components/Muiform";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Box >
         <Typography>Categories</Typography>
          <Category />
+         <MuiForm />
       </Box>
     </div>
   );
