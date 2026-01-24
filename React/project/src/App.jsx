@@ -38,7 +38,6 @@ function App() {
 
 export default App
 
-
 //structuring or routing
 //1.install react-router-dom
 //2.import BrowserRouter,Routes,Route from react-router-dom
