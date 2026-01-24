@@ -20,7 +20,7 @@ export default function BasicCard({ name, price, category, description }) {
         <Typography sx={{ color: "text.secondary", mb: 1.5 }}>
           {category}
         </Typography>
-
+        
         <Typography variant="body2">
           {description}
         </Typography>
