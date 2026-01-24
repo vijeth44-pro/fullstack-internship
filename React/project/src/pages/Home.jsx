@@ -37,7 +37,13 @@ export default function Home() {
             "https://i.pinimg.com/736x/53/db/2d/53db2d20c494d9d589589a114339c975.jpg"
           }
         />
-        <Category title={"Vijay"} description={""} image={"https://i.pinimg.com/736x/a6/93/3a/a6933af393283f495ca9a7d7bd103299.jpg"} />
+        <Category
+          title={"Actor"}
+          description={"Vijay"}
+          image={
+            "https://i.pinimg.com/736x/a6/93/3a/a6933af393283f495ca9a7d7bd103299.jpg"
+          }
+        />
         <Category title={""} description={""} image={""} />
       </Box>
       {/* <MuiForm /> */}

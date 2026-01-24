@@ -26,6 +26,7 @@ function App() {
         <Routes> 
          <Route path='/' element={<Home/>}/> {/*only / for home page*/}
          <Route path='/myform' element={<Form/>}/>
+         <Route path='/mui' element={<MuiComponents/>}/>
         </Routes>
       </BrowserRouter>
       {/* <Form /> */}
