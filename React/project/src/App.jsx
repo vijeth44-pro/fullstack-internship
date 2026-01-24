@@ -15,18 +15,34 @@ import Form from './pages/form.jsx'
 import TaskCard from './pages/taskcard.jsx'
 import MuiComponents from './mui/MuiComponents.jsx'
 import Home from './pages/Home.jsx'
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div>
+      <BrowserRouter>
+        <Routes> 
+         <Route path='/' element={<Home/>}/> {/*only / for home page*/}
+         <Route path='/myform' element={<Form/>}/>
+        </Routes>
+      </BrowserRouter>
       {/* <Form /> */}
       {/* <TaskCard /> */}
       {/* <MuiComponents /> */}
-      <Home />
+      {/* <Home /> */}
     </div>
   )
 }
 
 export default App
+
+
+//structuring or routing
+//1.install react-router-dom
+//2.import BrowserRouter,Routes,Route from react-router-dom
+//3.wrap your app in <BrowserRouter> in App.jsx
+//4.define all your routes inside <Routes>
+//5.inside <Route> define path and element to be rendered
+//6.path means url path {routing end point} and element means which component to be rendered
