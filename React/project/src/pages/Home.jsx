@@ -24,8 +24,8 @@ export default function Home() {
         }}
       >
         <Category
-          title={"Electronics"}
-          description={"designed for electronics"}
+          title={"Food"}
+          description={"Healthy Kutta"}
           image={
             "https://th.bing.com/th/id/OIP.9BO5ezpeO0Qpe57cf4ywvgHaE8?w=241&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
           }
