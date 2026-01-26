@@ -44,7 +44,13 @@ export default function Home() {
             "https://i.pinimg.com/736x/a6/93/3a/a6933af393283f495ca9a7d7bd103299.jpg"
           }
         />
-        <Category title={""} description={""} image={""} />
+        <Category
+          title={"Frame"}
+          description={"Beautiful photo Frame"}
+          image={
+            "https://i.pinimg.com/1200x/79/bd/25/79bd25995f9207b76ef3c1e5977505a1.jpg"
+          }
+        />
       </Box>
       {/* <MuiForm /> */}
       <Box
