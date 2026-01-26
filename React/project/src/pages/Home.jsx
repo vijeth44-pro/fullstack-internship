@@ -66,7 +66,7 @@ export default function Home() {
             color: "orange",
             textAlign: "center",
             fontWeight: "bold",
-            p: 6,
+            p: 6
           }}
         >
           Designed By Vijeth Rai
