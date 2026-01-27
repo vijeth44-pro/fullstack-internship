@@ -51,7 +51,7 @@ export default function RecipeReviewCard() {
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            R
+            V
           </Avatar>
         }
         action={
@@ -66,13 +66,11 @@ export default function RecipeReviewCard() {
         component="img"
         height="194"
         image="https://i.pinimg.com/1200x/ce/ae/eb/ceaeeb45f40cb88ca8566792345791ff.jpg"
-        alt="Paella dish"
+        alt="swordsmen"
       />
       <CardContent>
         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-          This impressive paella is a perfect party dish and a fun meal to cook
-          together with your guests. Add 1 cup of frozen peas along with the mussels,
-          if you like.
+          Agressive and lonely swordsman lost battle but won may hearts remained in many hearts
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
