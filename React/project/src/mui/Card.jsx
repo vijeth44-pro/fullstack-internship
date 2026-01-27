@@ -60,7 +60,7 @@ export default function RecipeReviewCard() {
           </IconButton>
         }
         title="lonely swordmen"
-        subheader="September 14, 2016"
+        subheader="june 14, 2007"
       />
       <CardMedia
         component="img"
