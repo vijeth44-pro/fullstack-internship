@@ -59,7 +59,7 @@ export default function RecipeReviewCard() {
             <MoreVertIcon />
           </IconButton>
         }
-        title="Shrimp and Chorizo Paella"
+        title="lonely swordmen"
         subheader="September 14, 2016"
       />
       <CardMedia
