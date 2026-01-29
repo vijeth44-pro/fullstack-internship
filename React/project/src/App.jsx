@@ -16,6 +16,7 @@ import TaskCard from './pages/taskcard.jsx'
 import MuiComponents from './mui/MuiComponents.jsx'
 import Home from './pages/Home.jsx'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import ResponsiveAppBar from './components/Navbar1'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -23,6 +24,7 @@ function App() {
   return (
     <div>
       <BrowserRouter>
+        <ResponsiveAppBar/>
         <Routes> 
          <Route path='/' element={<Home/>}/> {/*only / for home page*/}
          <Route path='/myform' element={<Form/>}/>
