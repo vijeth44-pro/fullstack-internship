@@ -17,6 +17,7 @@ import MuiComponents from './mui/MuiComponents.jsx'
 import Home from './pages/Home.jsx'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import ResponsiveAppBar from './components/Navbar1'
+import Products from './mui/Products'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -28,7 +29,7 @@ function App() {
         <Routes> 
          <Route path='/' element={<Home/>}/> {/*only / for home page*/}
          <Route path='/myform' element={<Form/>}/>
-         <Route path='/mui' element={<MuiComponents/>}/>
+         <Route path='/products' element={<Products/>}/>
         </Routes>
       </BrowserRouter>
       {/* <Form /> */}
