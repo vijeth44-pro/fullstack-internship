@@ -22,7 +22,7 @@ import LocalMallSharpIcon from '@mui/icons-material/LocalMallSharp';
 const pages = [
     {name:'HOME',path:"/"},
     {name:'Form',path:"/myform"},
-    {name:'Products',path:"/myproduct"},
+    {name:'Products',path:"/products"},
 
 ];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
