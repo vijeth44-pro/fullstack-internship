@@ -1,16 +1,102 @@
-# React + Vite
+# React Learning Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React + Vite practice application created as part of the internship repository. It combines routing, form handling, reusable components, Material UI experiments, and ES6 concept demos in one workspace.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React 19
+- Vite
+- React Router
+- Material UI
+- styled-components
+- ESLint
 
-## React Compiler
+## Available Scripts
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+Additional scripts:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm run build
+npm run preview
+npm run lint
+```
+
+## Current Routes
+
+Defined in `src/App.jsx`:
+
+- `/` - home page with hero banner and category cards
+- `/myform` - simple form that stores entries in local component state and displays them in a table
+- `/products` - Material UI product form that creates product cards from submitted input
+
+## Source Structure
+
+```text
+src/
+|-- assets/
+|-- components/
+|-- es/
+|-- mui/
+|-- pages/
+|-- App.css
+|-- App.jsx
+|-- index.css
+`-- main.jsx
+```
+
+### `src/components/`
+
+Contains reusable and practice-oriented components such as:
+
+- `Category.jsx`
+- `Navbar.jsx`
+- `Navbar1.jsx`
+- `Muiform.jsx`
+- `Muicard.jsx`
+- `hooks.jsx`
+- additional card and home experiments
+
+### `src/pages/`
+
+Route-level components used by the router:
+
+- `Home.jsx`
+- `form.jsx`
+- `taskcard.jsx`
+
+### `src/mui/`
+
+Material UI demo components, including product and card UIs:
+
+- `MuiComponents.jsx`
+- `Products.jsx`
+- `ButtonDemo.jsx`
+- `Card.jsx`
+
+### `src/es/`
+
+Small ES6 practice files:
+
+- `variables.jsx`
+- `arrow.jsx`
+- `destructuring.jsx`
+- `spread.jsx`
+- `map.jsx`
+
+## What This Project Demonstrates
+
+- React component composition
+- `useState` for form and UI state
+- browser routing with `react-router-dom`
+- Material UI form fields, cards, buttons, and layout components
+- basic page structuring for a multi-page React app
+
+## Notes
+
+- Some imported demo files are not currently mounted in the router but remain in the project as learning references.
+- The UI uses a mix of custom styles and Material UI components because this project is meant for experimentation and practice.
