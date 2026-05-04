@@ -1,51 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import Variables from './es/variables.jsx' //any name can be given but path should be correct
-// ./to exit from file
-// ../ to go back to previous folder
-import Arrow from './es/arrow'
-import Destructuring from './es/destructuring.jsx'
-import Spread from './es/spread.jsx'
-import Card from './components/card.jsx'
-import Map from './es/map.jsx'
-import  Hooks from './components/hooks.jsx'
-import Form from './pages/form.jsx'
-import TaskCard from './pages/taskcard.jsx'
-import MuiComponents from './mui/MuiComponents.jsx'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { ThemeProvider } from './context/ThemeContext'
+import { CartProvider } from './context/CartContext'
+import EnhancedNavbar from './components/EnhancedNavbar'
 import Home from './pages/Home.jsx'
-import {BrowserRouter,Routes,Route} from 'react-router-dom'
-import ResponsiveAppBar from './components/Navbar1'
+import Form from './pages/form.jsx'
 import Products from './mui/Products'
+import TodoApp from './pages/TodoApp.jsx'
+import NotesApp from './pages/NotesApp.jsx'
+import Cart from './pages/Cart.jsx'
+import UserDashboard from './pages/UserDashboard.jsx'
+import Analytics from './pages/Analytics.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div>
-      <BrowserRouter>
-        <ResponsiveAppBar/>
-        <Routes> 
-         <Route path='/' element={<Home/>}/> {/*only / for home page*/}
-         <Route path='/myform' element={<Form/>}/>
-         <Route path='/products' element={<Products/>}/>
-        </Routes>
-      </BrowserRouter>
-      {/* <Form /> */}
-      {/* <TaskCard /> */}
-      {/* <MuiComponents /> */}
-      {/* <Home /> */}
-    </div>
+    <ThemeProvider>
+      <CartProvider>
+        <BrowserRouter>
+          <EnhancedNavbar />
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/myform' element={<Form />} />
+            <Route path='/products' element={<Products />} />
+            <Route path='/todos' element={<TodoApp />} />
+            <Route path='/notes' element={<NotesApp />} />
+            <Route path='/cart' element={<Cart />} />
+            <Route path='/dashboard' element={<UserDashboard />} />
+            <Route path='/analytics' element={<Analytics />} />
+          </Routes>
+        </BrowserRouter>
+      </CartProvider>
+    </ThemeProvider>
   )
 }
 
 export default App
-
-//structuring or routing
-//1.install react-router-dom
-//2.import BrowserRouter,Routes,Route from react-router-dom
-//3.wrap your app in <BrowserRouter> in App.jsx
-//4.define all your routes inside <Routes>
-//5.inside <Route> define path and element to be rendered
 //6.path means url path {routing end point} and element means which component to be rendered
