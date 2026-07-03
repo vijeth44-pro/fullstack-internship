@@ -1,221 +1,96 @@
-# Full Stack Internship Repository
+# Full Stack Internship Showcase
 
-This repository is a collection of daily practice work, mini tasks, UI exercises, and React learning projects completed during a full stack internship. It contains both standalone HTML/CSS/JavaScript files and a larger React application built with Vite.
+This repository is now structured like a small showcase hub for internship practice work. Instead of feeling like a loose set of isolated exercises, the root of the project includes a visual landing page that helps you jump into the strongest HTML, CSS, JavaScript, DOM, Bootstrap, and React work quickly.
 
-## Repository Overview
+## What Changed
 
-The codebase is organized as a learning workspace rather than a single production app. Each folder focuses on a specific concept such as forms, DOM manipulation, layouts, theming, shopping UI design, or React component patterns.
+- Added a root `index.html` showcase page that acts as the main entry point for the full folder
+- Added `styles.css` and `script.js` to give the repository a more modern visual identity and scroll-based motion
+- Rebuilt `dom/dom.html` into a polished DOM playground with selector demos, event logging, and live calculations
+- Refreshed this README so the project reads more like a portfolio workspace
 
-## Tech Stack
+## Best Entry Points
 
-- HTML5
-- CSS3
-- JavaScript
-- React 19
-- Vite
-- React Router
-- Material UI
-- styled-components
-- Bootstrap
-- Font Awesome
+- `index.html` for the new internship showcase hub
+- `dom/dom.html` for the upgraded DOM practice page
+- `webpage/index.html` for the large storefront-style static UI
+- `React/project/README.md` for the React application setup and route overview
 
 ## Folder Structure
 
 ```text
 fullstack-internship/
 |-- calculator/
-|   `-- calculator.html
 |-- dom/
-|   `-- dom.html
 |-- form/
-|   `-- form.html
 |-- img/
-|   |-- Berserk.jpg
-|   |-- bg.jpg
-|   |-- blue.png
-|   |-- modiji.png
-|   |-- payment.png
-|   |-- pink.png
-|   `-- top.png
 |-- js/
-|   `-- internal_js.html
 |-- notes & codes/
-|   |-- beginner codes/
-|   |   |-- bootstrap.html
-|   |   |-- index.html
-|   |   `-- tables.html
-|   `-- css example/
-|       |-- inline-style.html
-|       |-- internal-style.html
-|       |-- page1.html
-|       |-- page2.html
-|       `-- style.css
 |-- React/
-|   `-- project/
-|       |-- src/
-|       |   |-- assets/
-|       |   |-- components/
-|       |   |-- es/
-|       |   |-- mui/
-|       |   `-- pages/
-|       |-- index.html
-|       |-- package.json
-|       |-- vite.config.js
-|       `-- README.md
 |-- Tak 3/
-|   `-- shopping.html
 |-- Task 1/
-|   `-- task1.html
 |-- Task 2/
-|   |-- employee.html
-|   `-- payment-form.html
 |-- theme/
-|   `-- dark-light-theme.html
 |-- webpage/
-|   |-- css/
-|   |   `-- index.css
-|   |-- images/
-|   `-- index.html
+|-- index.html
+|-- styles.css
+|-- script.js
 `-- README.md
 ```
 
-## Projects and Exercises
+## Project Areas
 
-### 1. `React/project`
+### 1. Showcase Hub
 
-The main React learning project in this repository. It uses Vite for development, React Router for navigation, and Material UI for interface components.
+The new root `index.html` gives the repo a stronger presentation layer. It links to the main practice files and highlights the kinds of work inside the repository.
 
-Current routes in `src/App.jsx`:
+### 2. DOM Playground
 
-- `/` renders the home page with a hero image and category cards
-- `/myform` renders a simple form with table output
-- `/products` renders a Material UI product form that creates product cards
+`dom/dom.html` is now a more exciting learning page that still teaches the same concepts:
 
-Important folders:
+- DOM selection by ID, tag name, and class name
+- style changes through JavaScript
+- event handling with click, hover, input, and page load
+- number calculations using user input
+- live product total updates
 
-- `src/components/` reusable UI experiments such as cards, category blocks, navbar variants, hooks practice, and MUI form/card components
-- `src/pages/` route-level pages used by the app
-- `src/mui/` Material UI practice components and product demo screens
-- `src/es/` ES6 practice files for variables, arrow functions, destructuring, spread, and map
-- `src/assets/` static assets used by the React app
+### 3. Static Practice Pages
 
-See [React/project/README.md](React/project/README.md) for app-specific setup details.
+The repository still includes all of the original standalone practice work such as:
 
-### 2. `calculator/`
+- forms
+- tables
+- calculator
+- payment form
+- employee dashboard
+- shopping UI
+- theme toggle
+- CSS examples
+- beginner HTML exercises
 
-Contains a simple calculator interface built with HTML, CSS, and inline JavaScript.
+### 4. React Project
 
-Features:
+Inside `React/project/` there is a larger Vite-based React learning app that explores:
 
-- Number and operator buttons
-- Read-only display field
-- Clear button
-- Calculation using `eval()`
+- React Router
+- reusable components
+- context providers
+- Material UI
+- page-based feature experiments like notes, todos, cart, dashboard, and analytics
 
-### 3. `dom/`
+## How To Use
 
-DOM manipulation practice file with examples of:
+### Static files
 
-- `getElementById`, `getElementsByTagName`, and `getElementsByClassName`
-- changing styles and content dynamically
-- event handling with `onclick`, `onmouseover`, `onchange`, and `onsubmit`
-- reading input values and calculating totals
+Open any HTML file directly in a browser. The best starting point is:
 
-### 4. `form/`
+```text
+index.html
+```
 
-Basic HTML registration form demonstrating:
-
-- text, email, password, tel, number, date, and time inputs
-- radio buttons and checkboxes
-- select dropdowns
-- file upload
-- submit and reset actions
-
-### 5. `js/`
-
-Contains JavaScript practice in `internal_js.html`. This folder is useful for basic script embedding and browser-side JS exercises.
-
-### 6. `notes & codes/`
-
-A collection of beginner examples and CSS practice files.
-
-`beginner codes/`
-
-- `bootstrap.html`: Bootstrap practice page
-- `index.html`: basic HTML exercise
-- `tables.html`: table structure practice
-
-`css example/`
-
-- `inline-style.html`: inline CSS example
-- `internal-style.html`: internal stylesheet example
-- `page1.html` and `page2.html`: linked page examples
-- `style.css`: external stylesheet used by the CSS examples
-
-### 7. `Tak 3/`
-
-Contains `shopping.html`, a shopping cart UI mockup built mostly with inline styles.
-
-Highlights:
-
-- product rows with quantity controls
-- order summary blocks
-- promo code area
-- action buttons for shop and checkout
-- image assets sourced from the top-level `img/` folder
-
-### 8. `Task 1/`
-
-Contains `task1.html`, a timetable table exercise using `rowspan`, `colspan`, and HTML table attributes.
-
-### 9. `Task 2/`
-
-Contains two UI practice files:
-
-- `employee.html`: employee management dashboard layout with table, actions, and pagination styling
-- `payment-form.html`: checkout/payment form with billing and card details
-
-### 10. `theme/`
-
-Contains `dark-light-theme.html`, a basic JavaScript toggle for switching the page background between light and dark modes.
-
-### 11. `webpage/`
-
-A larger static storefront-style page inspired by an e-commerce landing page.
-
-Highlights:
-
-- Bootstrap-based navigation and layout
-- hero banners and promotional sections
-- carousel section
-- sale/product cards
-- feature cards
-- structured footer
-- custom CSS in `webpage/css/index.css`
-- supporting images in `webpage/images/`
-
-### 12. `img/`
-
-Shared image assets used by some standalone HTML tasks such as the shopping cart and payment form.
-
-## How To Run
-
-### Static HTML projects
-
-Most folders in this repository are standalone browser exercises. You can run them by opening the corresponding `.html` file directly in a browser.
-
-Examples:
-
-- `calculator/calculator.html`
-- `dom/dom.html`
-- `form/form.html`
-- `Tak 3/shopping.html`
-- `Task 2/payment-form.html`
-- `webpage/index.html`
+From there you can click into the other tasks.
 
 ### React app
-
-To run the React app locally:
 
 ```bash
 cd React/project
@@ -223,9 +98,7 @@ npm install
 npm run dev
 ```
 
-Then open the local Vite URL shown in the terminal, usually `http://localhost:5173`.
-
-Other available scripts:
+Other scripts:
 
 ```bash
 npm run build
@@ -233,25 +106,6 @@ npm run preview
 npm run lint
 ```
 
-## Learning Areas Covered
+## Purpose
 
-- HTML forms and tables
-- CSS layouts and styling methods
-- DOM manipulation
-- event handling
-- simple JavaScript calculations
-- theme toggling
-- Bootstrap layouts
-- React routing
-- React state management with `useState`
-- Material UI components
-- reusable component structure
-
-## Notes
-
-- This repository mixes polished UI tasks with concept practice files, so naming and structure reflect day-to-day learning rather than a single unified product.
-- The React app includes generated dependencies locally. If cloning the repository fresh, running `npm install` inside `React/project` is still the safest setup step.
-
-## Suggested GitHub Description
-
-`Daily full stack internship tasks covering HTML, CSS, JavaScript, DOM practice, Bootstrap layouts, and a React + Vite learning project.`
+This repo is still a learning workspace, but it now presents that learning in a more confident way. The goal of the changes was not to erase the practice nature of the folder, but to make the folder feel more intentional, more visual, and more fun to explore.

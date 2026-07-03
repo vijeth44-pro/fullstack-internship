@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Stack Internship Showcase</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="hero">
+    <nav class="topbar">
+      <span class="brand">Full Stack Internship</span>
+      <a class="ghost-link" href="README.md">Read the repo guide</a>
+    </nav>
+
+    <div class="hero-grid">
+      <section class="hero-copy">
+        <p class="kicker">Practice archive turned into a launchpad</p>
+        <h1>One folder, many builds, now with a stronger vibe.</h1>
+        <p class="hero-text">
+          This workspace started as daily internship practice. It now has a single
+          front door that highlights the HTML, CSS, JavaScript, DOM, Bootstrap, and React work inside.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">Explore Projects</a>
+          <a class="button secondary" href="React/project/README.md">Open React Guide</a>
+        </div>
+      </section>
+
+      <aside class="hero-panel">
+        <div class="orbit-card">
+          <span class="badge">Highlights</span>
+          <ul class="highlight-list">
+            <li>Interactive DOM playground</li>
+            <li>Static UI practice collection</li>
+            <li>React + Vite learning app</li>
+            <li>Improved repo presentation</li>
+          </ul>
+        </div>
+        <div class="metric-row">
+          <div class="metric">
+            <strong>12+</strong>
+            <span>Practice areas</span>
+          </div>
+          <div class="metric">
+            <strong>3</strong>
+            <span>Main stacks</span>
+          </div>
+          <div class="metric">
+            <strong>1</strong>
+            <span>Showcase hub</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="projects">
+      <div class="section-heading">
+        <p class="section-kicker">Projects</p>
+        <h2>Click into the work</h2>
+      </div>
+
+      <div class="project-grid">
+        <a class="project-card featured" href="dom/dom.html">
+          <span class="card-tag">DOM + JavaScript</span>
+          <h3>DOM Playground</h3>
+          <p>A refreshed exercise page with selector demos, live calculators, and event logging.</p>
+        </a>
+
+        <a class="project-card" href="webpage/index.html">
+          <span class="card-tag">Bootstrap UI</span>
+          <h3>Storefront Landing Page</h3>
+          <p>A product-heavy static page with banners, carousel sections, sale blocks, and footer design.</p>
+        </a>
+
+        <a class="project-card" href="calculator/calculator.html">
+          <span class="card-tag">JavaScript Basics</span>
+          <h3>Calculator</h3>
+          <p>A simple browser calculator for quick arithmetic and button-based interactions.</p>
+        </a>
+
+        <a class="project-card" href="form/form.html">
+          <span class="card-tag">HTML Forms</span>
+          <h3>Registration Form</h3>
+          <p>A basic form exercise covering inputs, choices, uploads, and standard browser controls.</p>
+        </a>
+
+        <a class="project-card" href="Task 2/payment-form.html">
+          <span class="card-tag">UI Task</span>
+          <h3>Payment Form</h3>
+          <p>A checkout-style layout focused on billing and card information design.</p>
+        </a>
+
+        <a class="project-card" href="Task 2/employee.html">
+          <span class="card-tag">Dashboard UI</span>
+          <h3>Employee Table</h3>
+          <p>An admin-style page with actions, table structure, and management layout practice.</p>
+        </a>
+
+        <a class="project-card" href="theme/dark-light-theme.html">
+          <span class="card-tag">Theme Toggle</span>
+          <h3>Dark Light Switch</h3>
+          <p>A small JavaScript page demonstrating background and theme switching behavior.</p>
+        </a>
+
+        <a class="project-card" href="Tak 3/shopping.html">
+          <span class="card-tag">Shopping UI</span>
+          <h3>Shopping Task</h3>
+          <p>A cart-oriented mockup with summary blocks, buttons, and product visuals.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="section split-section">
+      <div class="section-heading">
+        <p class="section-kicker">Learning Tracks</p>
+        <h2>What this repo covers</h2>
+      </div>
+
+      <div class="track-grid">
+        <article class="track-card">
+          <h3>Frontend Foundations</h3>
+          <p>Tables, forms, layout experiments, inline styling practice, and CSS examples live across the notes and task folders.</p>
+        </article>
+        <article class="track-card">
+          <h3>JavaScript Practice</h3>
+          <p>DOM events, calculations, theme toggling, and beginner browser-side logic are spread across focused mini exercises.</p>
+        </article>
+        <article class="track-card">
+          <h3>React Growth</h3>
+          <p>The Vite app explores routing, component structure, Material UI, context, and page-based feature building.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section react-spotlight">
+      <div class="spotlight-copy">
+        <p class="section-kicker">React App</p>
+        <h2>There’s also a bigger app inside the repo</h2>
+        <p>
+          The React project includes routes for a form, products, notes, todos, cart, dashboard,
+          and analytics practice. Use the README in that folder for install and run steps.
+        </p>
+      </div>
+      <div class="spotlight-actions">
+        <a class="button primary" href="React/project/README.md">Read React README</a>
+        <a class="button secondary" href="React/project/src/App.jsx">View App Routes</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Built to make the internship folder feel more like a portfolio and less like a pile of files.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
